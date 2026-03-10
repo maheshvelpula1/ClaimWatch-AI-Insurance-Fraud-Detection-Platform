@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ClaimWatch-AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>ClaimWatch-AI</h1>
+<p>Insurance Fraud Detection Platform</p>
+</header>
+
+<div class="container">
+
+<h2>Submit Insurance Claim</h2>
+
+<form id="claimForm">
+
+<label>Customer Name</label>
+<input type="text" id="name" required>
+
+<label>Claim Amount (₹)</label>
+<input type="number" id="amount" required>
+
+<label>Claim Type</label>
+<select id="type">
+<option>Vehicle</option>
+<option>Health</option>
+<option>Property</option>
+</select>
+
+<label>Previous Claims</label>
+<input type="number" id="previous">
+
+<label>Upload Claim Document</label>
+<input type="file">
+
+<button type="submit">Analyze Claim</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
